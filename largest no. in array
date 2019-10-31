@@ -2,9 +2,9 @@
  
 int main()
 {
- 
+        //program to find the largest of an array
         int array[50], size, i, largest;
- 
+         //taing input
         printf("\n Enter the size of the array: ");
 	scanf("%d", &size);
  
@@ -14,13 +14,13 @@ int main()
 		scanf("%d", &array[i]);
  
         largest = array[0];
- 
+        //calculatng
         for (i = 1; i < size; i++) 
         {
 		if (largest < array[i])
 			largest = array[i];
 	}
- 
+        //printing the number
         printf("\n largest element present in the given array is : %d", largest);
  
         return 0;
